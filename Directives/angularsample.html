@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample angular</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>	
+		<script type="text/javascript" src ="js/today.js"></script>	
+	</head>
+
+	<body ng-app="classApp">
+	<input type="text" ng-model="name" ng-init="name='Vaibhav'">
+	<p>Hello <span ng-bind = "name"></span></p>
+	<p>{{name}}</p>
+
+	<div ng-controller="sumecontrollero">
+	<button onclick="somefunction()">Somebutton</button>
+		<ul>
+			{{name}}
+		</ul>
+	</div>
+
+	<div ng-controller="sumecontroller as sctrl">
+		<ul>
+			<li ng-repeat = "skeeper in sctrl.shopkeepers">{{skeeper}}</li>
+			{{sctrl.somefunction()}}
+		</ul>
+	</div>
+
+	<!-- Using Objects and show/hide -->
+	<div ng-controller = "sumecontrollertwo as sctrl">
+		<ul>
+			<li ng-repeat = "skeeper in sctrl.shopkeepers">name: {{skeeper.name}}; description: {{skeeper.des}} <button ng-show="skeeper.isOpen">Select</button></li>
+		</ul>
+	</div>
+
+	<!-- Filters data | filter(date, limitTo)-->
+	<div ng-controller = "sumecontrollertwo as sctrl">
+		<ul>
+			<li ng-repeat = "skeeper in sctrl.shopkeepers">name: {{skeeper.name}}; description: {{skeeper.des | uppercase}}</li>
+		</ul>
+	</div>
+
+	<!-- Images -->
+	<div ng-controller="sumecontrollerthree as sctrl">
+		<img ng-src="{{sctrl.image}}">
+	</div>
+
+	<div>
+		<h2>Some contenct</h2>
+		<h3>Some other content</h3>		
+	</div>
+
+	<templateone></templateone>
+
+	<div templateone></div>
+
+	<h3>Test</h3>
+
+	</body>
+</html>
