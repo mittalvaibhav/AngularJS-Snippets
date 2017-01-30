@@ -14,3 +14,6 @@
   * $http service
   * Promises (in JavaScript)
 * Only Basics of HTML5, CSS, Bootstrap
+
+#### Sessional Test - 1
+* Coming Soon
