@@ -5,12 +5,12 @@
 * Client server communication
 * Load balancers
 * Angular JS
-* Directive
-* Controller
-* Models, Binding Expression
-* Scopes
-* Filters
-* Routing - ngRoute, ui-router
-* $http service
-* Promises
-* Only Basics of HTML5, Bootstrap
+  * Directive
+  * Controller
+  * Models, Binding Expression
+  * Scopes
+  * Filters
+  * Routing - ngRoute, ui-router
+  * $http service
+  * Promises (in JavaScript)
+* Only Basics of HTML5, CSS, Bootstrap
